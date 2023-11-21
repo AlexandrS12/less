@@ -1,0 +1,75 @@
+@mybg: rgb(92, 92, 92);
+@back: background-color;
+@back1: @mybg+50;
+@back2: @mybg+100;
+
+@right-block: mydiv;
+@left-block: mydiv1;
+@main: main;
+@photo: photo;
+
+@width: 100%;
+@widR: 30%;
+@widL: 70%;
+@margin: 0;
+@padding: 0;
+
+@height: 36em;
+@hei: 3.5em;
+@block: flex;
+@jus: justify-content;
+@space: space-between;
+
+
+@hei-photo:  15em;
+@with-photo: 25em;
+
+.@{photo}{
+  height: @hei-photo;
+  width: @with-photo;
+  padding: 3em;
+}
+
+p{
+  padding: 3em;
+}
+
+
+.@{main}
+{
+  @{jus}: @space;
+  display: @block;
+}
+
+body{
+  margin: @margin;
+  padding: @padding;
+}
+
+footer, header{
+  @{back}: @mybg;
+  width: @width;
+  color: white;
+  height: @hei;
+} 
+  
+.@{right-block} {
+  width: @widR;
+  float: @block;
+  height: @height;
+  @{back}: @back1;
+   
+}
+.@{left-block} {
+  width: @widL;
+  float: @block;
+  height: @height;
+  @{back}: @back2;
+
+  @{jus}: @space;
+  display: @block;
+}
+
+
+
+
